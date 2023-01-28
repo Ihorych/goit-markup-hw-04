@@ -87,7 +87,7 @@
 
     .address{
         margin-left: auto;
-    }
+    }   
 
     .work-list{
         display: flex;
@@ -119,6 +119,27 @@
         padding: 0px;
         text-align: center;
         margin-top: 8px;
+    }
+
+    .team-link{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .social-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        background-color: var(--primary-brand);
+    }
+
+    .social-item:hover,
+    .social-item:focus{
+        background-color: var(--active-button);
     }
 
     .header-nav{
@@ -177,6 +198,13 @@
     .footer{
         padding-top: 100px;
         padding-bottom: 100px;
+        background-color: var(--section-colour);
+        display: flex;
+    }
+    
+    .footer-social{
+        display: flex;
+        margin-left: auto;
     }
 
     .footer-text{
@@ -187,6 +215,16 @@
         width: 264px;
         height: 72px;
         margin-top: 16px;
+    }
+
+    .social-item-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        background-color: var(--subtle-text);
     }
 
     .contatc-link{
@@ -206,6 +244,17 @@
         text-align: center;
         padding-top: 188px;
         padding-bottom: 188px;
+        background-image: linear-gradient(
+            to top,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .about{
@@ -249,10 +298,6 @@
 
     }
 
-    .banner,footer{
-        background-color: var(--section-colour);
-    }
-
     .team{
         background-color: var(--cloud-bckground);
     }
@@ -263,11 +308,22 @@
     }
 
     .customer-point{
+        display: flex;
+        justify-content: center;
+        align-items:center;
         width: 168px;
         height: 88px;
-        background-color: var(--cloud-bckground);
         border: 1px solid var(--subtle-text);
         border-radius: 4px;
+    }
+
+    .customer-point:hover,
+    .customer-point:focus{
+        border: 1px solid var(--active-button);
+    }
+
+    .customer-point:hover .customer-item{
+        fill: var(--active-button);  
     }
 
     button{
@@ -329,6 +385,9 @@
     }
 
     .benefits-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 264px;
         height: 112px;
         border-radius: 4px;
