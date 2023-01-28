@@ -201,12 +201,20 @@
         background-color: var(--section-colour);
         display: flex;
     }
+
+    .footer-links{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--white-base);
+    }
     
     .footer-social{
         display: flex;
-        margin-left: auto;
+        margin-top: 16px;
     }
-
     .footer-text{
         line-height: 1.5;
         font-weight: 400;
@@ -217,6 +225,11 @@
         margin-top: 16px;
     }
 
+    .studio{
+        display: flex;
+        gap: 120px;
+    }
+
     .social-item-footer{
         display: flex;
         align-items: center;
@@ -224,7 +237,9 @@
         border-radius: 50%;
         height: 40px;
         width: 40px;
-        background-color: var(--subtle-text);
+        background-image: linear-gradient(to top,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1));
     }
 
     .contatc-link{
@@ -320,6 +335,10 @@
     .customer-point:hover,
     .customer-point:focus{
         border: 1px solid var(--active-button);
+    }
+
+    .customer-item{
+        fill: var(--subtle-text)
     }
 
     .customer-point:focus .customer-item,
