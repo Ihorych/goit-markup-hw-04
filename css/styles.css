@@ -322,6 +322,7 @@
         border: 1px solid var(--active-button);
     }
 
+    .customer-point:focus .customer-item,
     .customer-point:hover .customer-item{
         fill: var(--active-button);  
     }
