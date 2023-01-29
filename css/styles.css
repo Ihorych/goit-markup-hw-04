@@ -215,6 +215,7 @@
         display: flex;
         justify-content: center;
         gap: 24px;
+        margin-top: 8px;
     }
 
     .social-item{
@@ -264,16 +265,24 @@
     .customers-list{
         display: flex;
         gap: 24px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .costumer-order{
+        flex-basis: calc((100% - 120px) / 6);
     }
 
     .customer-point{
         display: flex;
         justify-content: center;
         align-items:center;
-        width: 168px;
+        width: 100%;
         height: 88px;
         border: 1px solid var(--subtle-text);
         border-radius: 4px;
+        cursor: pointer;
     }
 
     .customer-point:hover,
@@ -326,6 +335,9 @@
     .selection-button:focus{
         background-color: var(--active-button);
         color: var(--cloud-bckground); 
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+         0px 2px 1px rgba(0, 0, 0, 0.08), 
+         0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 
     .portfolio{
@@ -355,7 +367,7 @@
         width: 264px;
         height: 112px;
         border-radius: 4px;
-        background-color: var(--accent);
+        background-color: var(--cloud-bckground);
         margin-bottom: 8px;
     }
 
@@ -372,6 +384,16 @@
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
+    .portfolio-item:hover{
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+         0px 1px 1px rgba(46, 47, 66, 0.16), 
+         0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+    .item-image{
+        display: block;
+    }
+
     .portfolio-subtitle{
         padding-left: 16px;
         padding-top: 32px;
@@ -382,7 +404,6 @@
         padding-top: 100px;
         padding-bottom: 100px;
         background-color: var(--section-colour);
-        display: flex;
     }
 
     
@@ -419,11 +440,13 @@
         margin-top: 16px;
     }
 
-    .studio{
+    .footer-conteiner{
         display: flex;
-        gap: 120px;
     }
 
+    .soc-wrapper{
+        margin-left: 120px;
+    }
 
     .social-item-footer{
         display: flex;
